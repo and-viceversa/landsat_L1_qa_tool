@@ -40,5 +40,8 @@ Quality assessment types:
 Other great tools exist, and are more comprehensive.
 
 -USGS has several offerings [here](https://www.usgs.gov/land-resources/nli/landsat/landsat-quality-assessment-tools).
+
 -USGS EROS offers [landsat-qa-arcgis-toolbox](https://github.com/USGS-EROS/landsat-qa-arcgis-toolbox), [espa-science-validation](https://github.com/USGS-EROS/espa-science-validation), and [espa-l2qa-tools](https://github.com/USGS-EROS/espa-l2qa-tools).
+
 -Rasterio's Landsat-8 QA tools is [here](https://github.com/mapbox/rio-l8qa).
+
