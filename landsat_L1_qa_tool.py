@@ -1,7 +1,10 @@
+#!/usr/bin/env python
+# Python 3.7
 
-import os
 import argparse
+import os
 import sys
+
 from osgeo import gdal
 from osgeo import gdalconst
 
@@ -387,9 +390,9 @@ class QualityBandConverter:
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description='Search through current directory and all subdirectories. Unpack Landsat-8'
-                    'quality bands based on flags of your choice. Optionally created a quality'
-                    'band \'layer stack\' for each Landsat-8 scene. \n')
+        description='Search through current directory and all subdirectories. Unpack Landsat-8 '
+                    'quality bands based on flags of your choice, and then create a quality assessment '
+                    'composite \'layer stack\' for each quality assessment measure you chose. \n')
 
     parser.add_argument('-c', '--clear-terrain',
                         action='store_const',
