@@ -146,41 +146,41 @@ class QualityBandConverter:
 
                     if val in val_set:
 
-                        if self.fill_dict:
+                        if self.args.fill:
                             if val == 1:
                                 self.fill_dict['dict']['fill_values'][y][x] = 1
                                 continue
 
-                        if self.terrain_occlusion_dict:
+                        if self.args.terrain_occlusion:
                             if val == 2:
                                 self.terrain_occlusion_dict['dict']['terrain_occlusion_values'][y][x] = 2
                                 continue
 
-                        if self.cloud_shadow_dict:
+                        if self.args.cloud_shadow:
                             if val in (2976, 7072):
                                 self.cloud_shadow_dict['dict']['cloud_shadow_values'][y][x] = val
 
-                        if self.clear_terrain_dict:
+                        if self.args.clear_terrain:
                             if val in (2720, 2724, 2728, 2732):
                                 self.clear_terrain_dict['dict']['clear_terrain_values'][y][x] = val
 
-                        if self.rad_sat_dict:
+                        if self.args.radiometric_saturation:
                             if val in (2724, 2728, 2732, 2804, 2808, 2812, 3748, 3752, 3756, 6820, 6824, 6828):
                                 self.rad_sat_dict['dict']['rad_sat_values'][y][x] = val
 
-                        if self.clouds_dict:
+                        if self.args.clouds:
                             if val in (2800, 2804, 2808, 2812, 6896):
                                 self.clouds_dict['dict']['clouds_values'][y][x] = val
 
-                        if self.cloud_conf_dict:
+                        if self.args.cloud_confidence:
                             if val in (2752, 2800, 2804, 2808, 2812, 6896):
                                 self.cloud_conf_dict['dict']['cloud_conf_values'][y][x] = val
 
-                        if self.cirrus_dict:
+                        if self.args.cirrus:
                             if val in (6816, 6820, 6824, 6828, 6896, 7072):
                                 self.cirrus_dict['dict']['cirrus_values'][y][x] = val
 
-                        if self.snow_ice_dict:
+                        if self.args.snow_ice:
                             if val in (3756, 3752, 3748, 3744):
                                 self.snow_ice_dict['dict']['snow_ice_values'][y][x] = val
 
